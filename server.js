@@ -1,6 +1,8 @@
-var http = require('http');
+var express = require('express')
+var app = express()
+ 
+app.use(express.static('./'));
 
-http.createServer(function(req, res){
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end();
-}).listen(8080);
+app.listen(8080)
+
+console.log('server stater on port 8080');
