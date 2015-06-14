@@ -5,4 +5,4 @@ app.use(express.static('./'));
 
 app.listen(8080)
 
-console.log('server stater on port 8080');
+console.log('server stated on port 8080');
